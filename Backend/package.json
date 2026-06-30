@@ -7,7 +7,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "build": "node scripts/build.js"
   },
   "dependencies": {
     "@clerk/express": "^2.1.32",
