@@ -34,4 +34,7 @@ res.sendFile(path.join(publicDir,"index.html"),(err)=>next(err));
 app.listen(PORT, () => {
     connectDB();
     console.log("Server is up and running on port:",PORT)
+    if(process.env.NODE_ENV === "production"){
+        job.start()
+    }
 })
