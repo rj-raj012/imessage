@@ -3,6 +3,7 @@ import "dotenv/config"; //without this data becomes undefined
 import { connectDB } from "./lib/db.js";
 import cors from "cors";
 import { clerkMiddleware } from '@clerk/express'
+import job from "./lib/cron.js";
 
 import fs from "fs";
 import path from "path";
